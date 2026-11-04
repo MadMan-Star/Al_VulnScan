@@ -26,8 +26,34 @@
     sudo apt update && sudo apt install nmap
     ```
 - [Ollama](https://ollama.com/) for running local LLMs (Linux/macOS/Windows supported)
+- [Virtualbox](https://www.virtualbox.org/wiki/Downloads) (Linux/macOS/Windows supported)
+- [Kali](https://www.kali.org/get-kali/#kali-virtual-machines) download the virtual box version
+- [Metasploitable](https://www.rapid7.com/products/metasploit/metasploitable/)
 
 ---
+
+## 🐉 Step-by-step Setup of Kali and Metasploitable
+
+### 1. Extract virtual box and start it
+
+### 2. Click machine on the top bar and then add on virtual box
+
+### 3. Find kali wherever you extracted to and click to add it to virtual box
+
+### 4. The username and password is kali
+
+### 5. Installing metasploitable; go back to virtual box and on the top bar click machine and then new
+
+### 6. Name it metasploitable and then click next until you see the virtual hard disk page
+
+### 7. On the virtual hard disk page, select adduse an existing virtual hard disk file
+
+### 8. Click add then find the Metasploitable.vmdk file in your extracted metasploitable folder, then choose it. Then click next and finish.
+
+```bash
+msfadmin # This is the username and password for logging into Metasploitable
+```
+### 9. For metasploitable and kali go to settings, then network, and in adapter 1, set both to host-only network adapter.
 
 ## 🧪 Step-by-step Setup
 
@@ -41,7 +67,7 @@ cd Al-VulnScan
 ### 2. Create a Virtual Environment (Recommended)
 
 ```bash
-python3 -m venv venv
+python3 -m venv venv # For Windows: py -m venv venv
 source venv/bin/activate  # For Windows: venv\Scripts\activate
 ```
 
@@ -96,6 +122,9 @@ response = ollama.chat(model="mistral", messages=[...])
 ```bash
 python main.py
 ```
+```Powershell
+py -X utf8 main.py
+```
 
 - Enter the **target IP**
 - Choose to scan specific ports or all
@@ -129,6 +158,6 @@ MIT License
 
 ## 🔗 Links
 
-- Project Repository: [github.com/Rjkumarkumawat/Al-VulnScan](https://github.com/Rjkumarkumawat/Al-VulnScan.git)
+- Original Project Repository: [github.com/Rjkumarkumawat/Al-VulnScan](https://github.com/Rjkumarkumawat/Al-VulnScan.git)
 - LLM Engine: [ollama.com](https://ollama.com)
 - CVE Database: [nvd.nist.gov](https://nvd.nist.gov)

@@ -26,7 +26,7 @@ def main():
     print_banner()
 
     # Reset the report file at the beginning
-    with open("report.md", "w") as f:
+    with open("report.md", "w", encoding = "utf-8") as f:
         f.write("# 🔐 Network Vulnerability Report\n\n")
 
     # Ask user for target IP
