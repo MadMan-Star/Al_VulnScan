@@ -60,9 +60,10 @@ msfadmin # This is the username and password for logging into Metasploitable
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/Rjkumarkumawat/Al-VulnScan.git
+git clone https://github.com/MadMan-Star/Al_VulnScan.git
 cd Al-VulnScan
 ```
+Original git clone: https://github.com/Rjkumarkumawat/Al-VulnScan.git
 
 ### 2. Create a Virtual Environment (Recommended)
 

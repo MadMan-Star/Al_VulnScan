@@ -1,0 +1,18 @@
+## Git Problems
+
+### Windows
+
+### 1.
+- Type env into the windows key, and select Edit the system environment variables
+### 2. 
+- Click the environment variable around the bottom
+### 3. 
+- Click on New and add the name git for variable name then for variable value print:
+``` powershell
+C:\Program Files\Git\cmd
+```
+### 4.
+- Click ok and then restart your terminal. Test with:
+```powershell
+git --version
+```
