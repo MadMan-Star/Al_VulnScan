@@ -2,7 +2,7 @@ import nmap
 from rich.console import Console
 
 def scan_target(target_ip, custom_ports=None):
-    nm = nmap.PortScanner()
+    nm = nmap.PortScanner(nmap_search_path=(r"C:\Program Files (x86)\Nmap\nmap.exe",))
     console = Console()
 
     port_range = ",".join(str(p) for p in custom_ports) if custom_ports else "1-65535"
